@@ -1,0 +1,125 @@
+printf '%s\n' 'Deadline: September 10th. 11:59:59
+
+Practice your git skills solving the following exercises. Create a file called answers.txt to write the answers.
+
+
+1. Install git in your computer.
+    In Mac you can install, executing the command $ git in your Terminal. If git is not installed,
+    it should appears a dialog with the install option. Or you can download and install from here.
+  done.
+
+2. Create a GitHub account.
+  done.
+
+3. Configure your computer with your account credentials.
+    Setting user.name and user.email are the minimum configuration options that need to be set so your name and email
+    will show up in your commit messages. Run:
+      $ git config --global user.name "Your Name"
+      $ git config --global user.email your@email.com
+   done.
+
+4. In your terminal, place in a convenient working directory and create a folder called memes-and-hopes.
+   set.
+
+5. Add some good memes to the folder.
+   ready.
+6. Change to the memes-and-hopes folder and execute the command: $ git status. What is the output?
+    MBP-de-Gustavo:memes-and-hopes GustavoM$ git status
+    On branch master
+
+    Initial commit
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+
+    	../.DS_Store
+    	./
+    	../net-canvas-master/
+    	../terminal-assignment-gustavomaldonado/
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+7. Initialize the folder as a git repository with the command: $ git init.
+   Initialized.
+
+8. Execute again: $ git status. What is the difference with the output of point 6?
+    MBP-de-Gustavo:memes-and-hopes GustavoM$ git init
+    Initialized empty Git repository in /Users/GustavoM/github/memes-and-hopes/.git/
+    MBP-de-Gustavo:memes-and-hopes GustavoM$ git status
+    On branch master
+
+    Initial commit
+
+    Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+
+    .DS_Store
+    IMG-20170903-WA0038.jpg
+    IMG_3332.JPG
+    IMG_3333.JPG
+    IMG_3334.JPG
+    IMG_3335.JPG
+    IMG_3336.JPG
+    IMG_3337.JPG
+    IMG_3344.JPG
+    IMG_3345.JPG
+    IMG_3346.JPG
+    IMG_3348.JPG
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    :::::Now it shows all my images as a list the way ls would do plus the .DS_store mac file.
+
+9. Stage the first commit, adding all of your memes.
+   git add . does a pretty good job adding the batch.
+
+10. Make your first commit with the message: "First commit with my best memes".
+   git commit -m (-m is not for memes it's for message flag)
+
+
+11. Log into your GitHub account and create a new repository.
+   As the repository name choose memes-and-hopes, add a funny description, choose public option and NOT CHECKthe
+ "Initialize this repository with a README" option. NOT CHECK!
+    done.
+
+12. Link your local repository, with the remote run the command: $git remote add origin
+https://github.com/YOUR_USERNAME/memes-and-hopes.git.
+    sweet.
+
+13. Now push your first commit with the command: $ git push -u origin master. The -u option only is necessary for the first commit.
+    -u option is useful.
+
+14. Visit the page of the remote repository (should be something like "https://github.com/YOUR_USERNAME/memes-and-hopes").
+ What do you see?
+    A shtupid .DS_Store file and a list of good memes.
+
+15. Create a file called README.md in your local repository, and write a list of three things that you hope to do in the next
+five years (use Sublime or Atom).
+    done.
+
+16. Add the file, commit and push.
+    pushed.
+
+17. Delete one element of your hope list.
+    deleted.
+
+18. Execute the command: $ git diff, What is the output? What do you think this command does?
+    MBP-de-Gustavo:memes-and-hopes GustavoM$ git diff
+    diff --git a/README.md b/README.md
+    index 08e7db3..dc5f0d8 100644
+    --- a/README.md
+    +++ b/README.md
+    @@ -1,3 +1,2 @@
+    Visit London
+    Visit Moscow
+    -Visit your mum
+
+    Shows the file that i modified and the content specifying that i deleted one line of code.
+
+19. Add the changes, commit and push them.
+    Added, commited and pushed!
+
+20. Include the link of your remote repository in the answers.txt file.
+    https://github.com/gustavomaldonado/memes-and-hopes.git
+    have fun!
+Happy Hacking :D
